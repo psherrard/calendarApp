@@ -22,10 +22,13 @@ html {
 }
 
 .calendar {
-  width: 45rem;
-  height: 52rem;
+  /* width: 45rem;
+  height: 52rem; */
+  width: 100%;
+  height: 100vh;
+  /* padding:20px; */
   /* background-color: #222227; */
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); */
 }
 
 .month {
@@ -33,16 +36,16 @@ html {
   height: 12rem;
   background-color: paleturquoise;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 2rem;
+  /* padding: 0 10rem; */
   text-align: center;
-  /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); */
 }
 
 .month i {
   font-size: 2.5rem;
   cursor: pointer;
+  /* padding:0 20px; */
 }
 
 .month h1 {
@@ -63,40 +66,47 @@ html {
   padding: 0 0.4rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+ 
 }
 
 .weekdays div {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  width: calc(44.2rem / 7);
+  /* width: calc(44.2rem / 7); */
   display: flex;
-  justify-content: center;
+  width:100%;
   align-items: center;
+  justify-content: center;
   /* text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); */
 }
 
 .days {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  /* gap: 1px 1px; */
+  grid-template-areas: ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . .";
+  /* flex-wrap: wrap; */
+  /* padding: 0.2rem; */
 }
 
 .days div {
   font-size: 1.4rem;
-  margin: 0.3rem;
-  /* CHANGE THIS FOR NEW LAYOUT */
-  width: calc(40.2rem / 7);
-  /* width:90px; */
-  height: 5rem;
+  height:125px; 
   display: flex;
-  justify-content: center;
+  width:100%;
   align-items: center;
-  transition: background-color 0.2s;
+  justify-content: center;
+  border: 1px solid rgba(151, 151, 151, 0.342);
 }
 
-.days div:hover:not(.today) {
+
+
+.days div:hover,
+.today:hover {
   background-color: #a3a3a346;
   border: 0.2rem solid rgb(151, 151, 151);
   cursor: pointer;
@@ -104,7 +114,7 @@ html {
 
 .prev-date,
 .next-date {
-  opacity: 0.5;
+  color: rgb(151, 151, 151)
 }
 
 .today {
