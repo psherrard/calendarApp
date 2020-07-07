@@ -15,10 +15,8 @@ const renderCal = () => {
 
     //getDay return index number
     const lastDayIndex =  new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
-    console.log(lastDayIndex);
 
     const nextDays = 7 - lastDayIndex - 1;
-    console.log(nextDays);
 
     let months = [
         'January',
@@ -62,11 +60,6 @@ const renderCal = () => {
 
 }
 
-
-
-
-
-
 document.querySelector('.prev').addEventListener('click', () => {
     date.setMonth(date.getMonth() -  1)
     renderCal();
@@ -77,4 +70,24 @@ document.querySelector('.next').addEventListener('click', () => {
     renderCal();
 })
 
+
 renderCal();
+
+let focus = () =>{
+    document.querySelector('.days').addEventListener('click', () => {
+        console.log('I was clicked');
+    })
+}
+
+focus();
+
+// when day is clicked, toggle class
+
+// css display:none
+// create function to show on click
+// function to hide on click
+
+
+
+// use localstorage to save data
+// some how to show that event is on that date

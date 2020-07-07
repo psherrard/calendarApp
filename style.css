@@ -83,7 +83,8 @@ html {
   height:125px; 
   display: flex;
   width:100%;
-  align-items: center;
+  /* align-items: center; */
+  padding-top:10px;
   justify-content: center;
   border: 1px solid rgba(151, 151, 151, 0.342);
 }
@@ -103,3 +104,4 @@ html {
 .today {
   background-color: paleturquoise;
 }
+
