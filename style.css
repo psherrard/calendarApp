@@ -86,7 +86,9 @@ html {
 .days div {
   font-size: 1.4rem;
   margin: 0.3rem;
+  /* CHANGE THIS FOR NEW LAYOUT */
   width: calc(40.2rem / 7);
+  /* width:90px; */
   height: 5rem;
   display: flex;
   justify-content: center;
