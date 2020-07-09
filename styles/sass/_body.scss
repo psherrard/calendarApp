@@ -1,0 +1,53 @@
+.weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+  
+.days {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+  
+.days div {
+    font-size: 1.4rem;
+    height:125px; 
+    display: flex;
+    width:100%;
+    /* align-items: center; */
+    padding-top:10px;
+    justify-content: center;
+    border: 1px solid rgba(151, 151, 151, 0.342);
+}
+  
+.days div:hover,
+.today:hover {
+    background-color: #a3a3a33b;
+    /* border: 0.2rem solid rgb(151, 151, 151); */
+    cursor: pointer;
+}
+  
+.prev-date,
+.next-date {
+    color: rgb(151, 151, 151)
+}
+  
+.today {
+    background-color: paleturquoise;
+}
+  
