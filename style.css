@@ -9,7 +9,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 62.5%;
+  font-family: 'Patua One', cursive;
 }
+
+.dark-mode { 
+  background-color: black;
+  filter: invert(1);
+}
+
 
 .container {
   width: 100%;
@@ -32,6 +39,8 @@ html {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  box-shadow: 0 0.5px 20px rgba(0, 0, 0, 0.295);
+  margin-bottom: 10px;
 }
 
 .month i {
@@ -42,7 +51,7 @@ html {
 .month h1 {
   font-size: 3rem;
   font-weight: 400;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 0.2rem;
   margin-bottom: 1rem;
 }
@@ -91,8 +100,8 @@ html {
 
 .days div:hover,
 .today:hover {
-  background-color: #a3a3a346;
-  border: 0.2rem solid rgb(151, 151, 151);
+  background-color: #a3a3a33b;
+  /* border: 0.2rem solid rgb(151, 151, 151); */
   cursor: pointer;
 }
 
