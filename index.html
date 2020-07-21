@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calander App</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sass/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet"> 
 </head>
@@ -34,6 +34,15 @@
             </div>
         </div>
     </section>
+    <div class="popup" id="popup">
+        <form action="">
+            <label for="title"></label>
+            <input type="text" id="title" name="title" placeholder="Add title and time">
+            <label for="message"></label>
+            <textarea id="message" name="message"  cols="30" rows="10" placeholder="description"></textarea>
+            <input id="submit" type="submit" value="Save">
+        </form>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

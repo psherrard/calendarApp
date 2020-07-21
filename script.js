@@ -1,5 +1,7 @@
 const date = new Date();
 
+document.getElementsByClassName('popup')[0].style.visibility = 'hidden';
+
 const renderCal = () => {
 
     date.setDate(1);
@@ -41,6 +43,7 @@ const renderCal = () => {
 
     let days = '';
 
+
     for(let x = firstDayIndex; x > 0; x-- ){
         days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
     }
@@ -76,10 +79,22 @@ renderCal();
 let focus = () =>{
     document.querySelector('.days').addEventListener('click', () => {
         console.log('I was clicked');
+        document.getElementsByClassName('popup')[0].style.visibility = 'visible';
     })
 }
 
 focus();
+
+
+
+// =========================================== B U T T O N =====================================
+
+
+
+// could proply write an if else statment for popup logic
+// make button to exit popup
+
+
 
 // when day is clicked, toggle class
 

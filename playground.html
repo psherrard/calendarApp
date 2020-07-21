@@ -37,8 +37,18 @@
         label,
         input,
         textarea {
-            text-align: center;
             width:100%;
+        }
+
+        textarea {
+            resize:none;
+        }
+
+        input,
+        textarea {
+            margin-bottom:10px;
+            padding:5px 10px;
+            font-family: 'Trebuchet MS',  sans-serif;
         }
 
        
@@ -51,8 +61,6 @@
         <form action="">
             <label for="title"></label>
             <input type="text" id="title" name="title" placeholder="Add title and time">
-            <!-- <label for="appt">Select a time:</label>
-            <input type="time" id="appt" name="appt"> -->
             <label for="message"></label>
             <textarea id="message" name="message"  cols="30" rows="10" placeholder="description"></textarea>
             <input id="submit" type="submit" value="Save">

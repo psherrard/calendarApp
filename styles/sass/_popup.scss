@@ -1,0 +1,38 @@
+.popup {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+
+
+    form {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin-top: 100px;
+        background-color: rgba(161, 161, 161, 0.473);
+        border: 2px solid rgba(161, 161, 161, 0.473);
+        border-radius: 15px;
+        color:white;
+        width: 300px;
+        padding: 30px;
+    }
+    
+    label,
+    input,
+    textarea {
+        width:100%;
+    }
+    
+    textarea {
+        resize:none;
+    }
+    
+    input,
+    textarea {
+        margin-bottom:10px;
+        padding:5px 10px;
+        font-family: 'Trebuchet MS',  sans-serif;
+    }
+}
+
